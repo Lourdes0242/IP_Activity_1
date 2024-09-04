@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lourdes</title>
+</head>
+
+<script>
+
+
+ 
+ function displayMe( ) {
+    var textValue = document.getElementById('text').value;
+    var gValue = document.getElementById('IPI').value;
+    var IMI = document.getElementById('IMI').value;
+    var OOP = document.getElementById('OOP').value;
+    var EDP = document.getElementById('EDP').value;
+    var HC2 = document.getElementById('HC2').value;
+
+    var total = Number(gValue) +  Number(IMI) + Number(OOP) +  Number(EDP) +  Number(HC2);
+    var Average= total / 5;
+    var ok = parseFloat (Average);
+
+
+ 
+
+     alert( "Name: " + textValue + "\n IPI: " +  gValue + "\n IMI: " + IMI + "\n OOP: "+ OOP   + "\n EDP: " + EDP + " \n HC2: " + HC2 +" \n Average: " +   ok) ;
+ }
+
+ 
+
+ 
+</script>
+
+<body>
+    Name:
+<input type="string" id ="text"> <br>
+
+Grade: <br>
+IPI:
+<input type="grade" id ="IPI"> <br>
+
+IMI:
+<input type="string" id ="IMI"> <br>
+
+OOP:
+<input type="string" id ="OOP"> <br>
+
+EDP:
+<input type="string" id ="EDP"> <br>
+
+HC2:
+<input type="string" id ="HC2"> <br>
+
+
+    <button onclick=" displayMe()"> Compute</button>
+
+
+
+</body>
+
+</html>
